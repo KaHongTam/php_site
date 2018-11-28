@@ -5,17 +5,9 @@ body {
     color: white;
 }
 
-/* div {
-    padding: 2px;
-    margin: 2px;
-    border: 1px solid #f00;
-    box-sizing: border-box;
-} */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.header {
+    color: black;
+    width: 100%;
 }
 
 .nav {
@@ -23,19 +15,34 @@ body {
     padding: 0;
     margin: 0;
     min-height: 50px;
-    width: 100%;
+    overflow: hidden;
     background-color: #5e717b;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     align-items: center;
     z-index:100;
 }
 
+.nav a{
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_right {
+    margin-right: 100px;
+    float: right;
+}
+
+.nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 .nav_menu {
-    /* margin-left: 30px; */
-    height: 50px;
-    width: 100px;
+    height: 54px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,17 +50,20 @@ body {
 
 .nav_menu:hover {
     background-color: #7a8991;
-    /* color: #c7e0f7; */
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    opacity: 0.4;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .sticky:hover {
+      opacity: 1;
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 60px;
   }
@@ -121,4 +131,21 @@ button:hover {
     box-shadow: 1px 1px #3b3d5cbd;
     transform: translateX(3px);
     transform: translateY(3px);
+}
+
+.footer {
+    background-color: #5e717b;
+    height: 80px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer img {
+    float: right;
+    height: 80px;
+    width: 80px;
+}
+
+.end {
+    height: 80px;
 }

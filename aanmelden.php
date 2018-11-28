@@ -9,30 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="nav" id="nav">
-            <div class="nav_menu">
-                menu 1
-            </div>
-            <div class="nav_menu">
-                menu 2
-            </div>
-            <div class="nav_menu">
-                menu 3
-            </div>
-            <div class="nav_menu">
-                menu 4
-            </div>
-            <div class="nav_menu">
-                menu 5
-            </div>
-            <div class="nav_menu">
-                menu 6
-            </div>
-            <div class="nav_menu">
-                menu 7
-            </div>
+    <div class="header">
+        <p>Hier komt de naam van de website</p>
+    </div>
+    <div class="nav" id="nav">
+        <a href="index.php" class="nav_menu">Home</a>
+        <a href="aanmelden.php" class="nav_menu">Hoe werkt het?</a>
+        <a class="nav_menu">Categorie</a>
+        <a class="nav_menu">Stijl</a>
+        <div class="nav_right">
+            <a href="aanmelden.php" class="nav_menu">Aanmelden</a>
+            <a href="inloggen.php" class="nav_menu">Inloggen</a>
+            <img src="Images/winkelwagen.jpg" width="50px">
         </div>
+    </div>
 
         <div class="formulier">
             <form action="get_invoer.php" method="post" autocomplete="off">
@@ -76,6 +66,12 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+            <a href="https://www.twitter.com/kahongtam" target="_blank"><img src="Images\social_twitter.png"></a>
+            <a href="https://www.facebook.com/kahongtam" target="_blank"><img src="Images\social_facebook3.png"></a>
+            <a href="mailto:kahongtam@hotmail.com" target="_blank"><img src="Images\social_email.png"></a>
+        </div>
+        <div class="end"></div>
     <script src="aanmelden.js"></script>
 </body>
 </html>
