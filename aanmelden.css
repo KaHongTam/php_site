@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+/* div {
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid #f00;
+    box-sizing: border-box;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+    width: 100%;
+    background-color: #5e717b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index:100;
+}
+
+.nav_menu {
+    /* margin-left: 30px; */
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu:hover {
+    background-color: #7a8991;
+    /* color: #c7e0f7; */
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+form {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 10px 20px;
+    background: #f8f8f4;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(99, 172, 255);
+    color: black;
+    box-shadow: 5px 5px  #3b8edb;
+  }
+
+  input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+    background: #ffffff1a;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 90%;
+    background-color: #efeee8;
+    color: #8a97a0;
+    box-shadow: 4px 4px #47a1f8;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #80c1ec;
+    border-radius: 3px;
+  }
+
+  input:focus {
+      box-shadow: 1px 1px #2666a1;
+      transform: translate(3px, 3px);
+  }
+
+  button {
+    /* padding: 19px 39px 18px 39px; */
+    color: #FFF;
+    background-color: #5e717b;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    height: 80px;
+    width: 100%;
+    border: 1px solid #97897d;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 #ffffff1a inset;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px #3b3c5cbd;
+  }
+
+button:hover {
+    background-color: #6b7981;
+    box-shadow: 4px 4px #2a2b42bd;
+}
+
+  button:active{
+    box-shadow: 1px 1px #3b3d5cbd;
+    transform: translateX(3px);
+    transform: translateY(3px);
+}
