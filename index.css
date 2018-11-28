@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.header {
+    color: black;
+    width: 100%;
+}
+
+.nav {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: #5e717b;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    align-items: center;
+    z-index:100;
+}
+
+.nav a{
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_right {
+    margin-right: 100px;
+    float: right;
+}
+
+.nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu {
+    height: 54px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu:hover {
+    background-color: #7a8991;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.4;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .sticky:hover {
+      opacity: 1;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.leftbar {
+    width: 18%;
+    /* background-color: #dfd3d3; */
+}
+
+.content {
+    /* padding-top: 50px; */
+    color: black;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.rightbar {
+    margin-right: 0;
+    width: 18%;
+    /* background-color: #dfd3d3; */
+}
+
+.woonkamer {
+    border: 0;
+    float: left;
+    position: relative;
+    display: flex; 
+    align-items: center;
+}
+ 
+  .canvas {
+    border: 0;
+    position: absolute;
+    top: 3%;
+    width: 27%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: grayscale(25%) contrast(90%) drop-shadow(8px 8px 10px #525050);
+   } 
+
+.actie {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.actie:hover {
+
+}
+
+.actie_tekst {
+    text-align: right;
+}
+
+.footer {
+    background-color: #5e717b;
+    height: 80px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer img {
+    float: right;
+    height: 80px;
+    width: 80px;
+}
+
+.end {
+    height: 80px;
+}
