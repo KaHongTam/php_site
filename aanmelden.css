@@ -17,9 +17,6 @@ body {
     min-height: 50px;
     overflow: hidden;
     background-color: #5e717b;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     align-items: center;
     z-index:100;
 }
@@ -42,10 +39,11 @@ body {
 
 .nav_menu {
     height: 54px;
-    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav_menu:hover {
