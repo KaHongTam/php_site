@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.header {
+    color: black;
+    width: 100%;
+}
+
+.nav {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: #5e717b;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    align-items: center;
+    z-index:100;
+}
+
+.nav a{
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_right {
+    margin-right: 100px;
+    float: right;
+}
+
+.nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu {
+    height: 54px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu:hover {
+    background-color: #7a8991;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.4;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .sticky:hover {
+      opacity: 1;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.leftbar {
+    width: 18%;
+    /* background-color: #dfd3d3; */
+}
+
+.content {
+    /* padding-top: 50px; */
+    color: black;
+    width: 64%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.smallWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item p {
+    bottom: 0;
+}
+
+.item img {
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+}
+
+.item img:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.footer {
+    background-color: #5e717b;
+    height: 80px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer img {
+    float: right;
+    height: 80px;
+    width: 80px;
+}
+
+.end {
+    height: 80px;
+}
