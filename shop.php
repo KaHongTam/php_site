@@ -45,7 +45,7 @@
             </div>
             <div class="smallWrapper">
                 <?php
-                    include "select_test.php"
+                    include "select_product.php"
                 ?>
             </div>
         </div>
