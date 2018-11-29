@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inloggen</title>
+    <title>PiKaso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <p>Hier komt de naam van de website</p>
+        <p>PiKaso.nl</p>
     </div>
     <div class="nav" id="nav">
         <a href="index.php" class="nav_menu">Home</a>
@@ -38,34 +38,22 @@
                 <img class="canvas" src="Images/natuur_4_schilderij_rood.jpg">
             </div>
             <div class="actie">
-                <div class="actie_sale"><img src="Images/sale.jpg"></div>
+                <div class="actie_sale">
+                    <div class="sale"><h1>S A L E</h1></div>    
+                </div>
                 <div class="actie_tekst">
-                <p>Minim anim sit non aliqua est velit ullamco. Sint ut ad occaecat mollit aute in reprehenderit Lorem amet quis
-                eiusmod est est tempor. Esse cupidatat ut proident in eu duis esse consequat labore laboris proident labore
-                cupidatat nulla.</p>
+                <h2>Nu in de aanbieding:</h2>
                 </div>
             </div>
-            <div>
-                <p>div content</p>
-                <p>Minim anim sit non aliqua est velit ullamco. Sint ut ad occaecat mollit aute in reprehenderit Lorem amet quis
-                eiusmod est est tempor. Esse cupidatat ut proident in eu duis esse consequat labore laboris proident labore
-                cupidatat nulla.
-
-                Do aute veniam nisi ad ipsum labore consequat sit in enim irure. Incididunt sint deserunt laborum ex. Velit
-                mollit eiusmod anim velit excepteur duis amet. Incididunt culpa eiusmod magna cupidatat commodo amet culpa
-                amet. Anim aliqua dolore tempor commodo in nisi excepteur consequat ullamco.
-
-                Cupidatat nisi incididunt officia deserunt quis commodo. Consequat quis veniam adipisicing irure consequat quis
-                pariatur tempor et ad. Veniam do aute quis excepteur mollit. In eiusmod aliquip commodo dolore. Consequat
-                exercitation est commodo fugiat nisi.
-
-                Deserunt velit ipsum laborum ut fugiat. Consectetur consectetur minim in aliquip qui laborum laboris incididunt
-                id nostrud esse qui quis. Non elit laborum amet dolor nulla minim mollit sint tempor enim commodo consequat.</p>
+            <div class="informatie">
+                <h3>Koop unieke werken in de uitvoering die bij jou past! De uitgebreide collectie van Werk aan de Muur wordt 
+                    aangeboden door meer dan duizend creatieve talenten. Ieder werk is verkrijgbaar in alle maten en materialen. </h3>
+                <h3> En wanneer je een werk hebt besteld, gaat een deel naar de beeldmaker van jouw werk. Steun creativiteit!</h3>
             </div>
         </div>
 </div>
         <div class="footer">
-            <a href="https://www.twitter.com/kahongtam" target="_blank"><img src="Images\social_twitter.png"></a>
+            <a href="https://www.twitter.com/kahongtam1" target="_blank"><img src="Images\social_twitter.png"></a>
             <a href="https://www.facebook.com/kahongtam" target="_blank"><img src="Images\social_facebook3.png"></a>
             <a href="mailto:kahongtam@hotmail.com" target="_blank"><img src="Images\social_email.png"></a>
         </div>

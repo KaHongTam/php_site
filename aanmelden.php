@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inloggen</title>
+    <title>PiKaso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="aanmelden.css" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <p>Hier komt de naam van de website</p>
+        <p>PiKaso.nl</p>
     </div>
     <div class="nav" id="nav">
         <a href="index.php" class="nav_menu">Home</a>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="footer">
-            <a href="https://www.twitter.com/kahongtam" target="_blank"><img src="Images\social_twitter.png"></a>
+            <a href="https://www.twitter.com/kahongtam1" target="_blank"><img src="Images\social_twitter.png"></a>
             <a href="https://www.facebook.com/kahongtam" target="_blank"><img src="Images\social_facebook3.png"></a>
             <a href="mailto:kahongtam@hotmail.com" target="_blank"><img src="Images\social_email.png"></a>
         </div>
