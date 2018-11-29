@@ -15,7 +15,7 @@
     <div class="nav" id="nav">
         <a href="index.php" class="nav_menu">Home</a>
         <a href="aanmelden.php" class="nav_menu">Hoe werkt het?</a>
-        <a href="shop.php" class="nav_menu">Categorie</a>
+        <a href="shop.php?prijs=2" class="nav_menu">Categorie</a>
         <a class="nav_menu">Stijl</a>
         <div class="nav_right">
             <a href="aanmelden.php" class="nav_menu">Aanmelden</a>
@@ -28,9 +28,24 @@
             <p>div leftbar</p>
         </div>
         <div class="content">
+            <div class="orderMenu">
+            <form action="" method="get">
+                <div class="orderPrijs">
+                    Prijs:
+                    <input type="radio" name="prijs" value="1" checked> Oplopend
+                    <input type="radio" name="prijs" value="0" /> Aflopend
+                </div>
+                <div class="orderCategorie">
+                    <input type="radio" name="categorie" value="Dieren" checked> Dieren
+                    <input type="radio" name="categorie" value="Natuur"> Natuur
+                    <input type="radio" name="categorie" value="Urban"> Urban
+                </div>
+                <div><button type="submit">Sorteer</button></div>
+  </form>
+            </div>
             <div class="smallWrapper">
                 <?php
-                    include "select_product.php"
+                    include "select_test.php"
                 ?>
             </div>
         </div>

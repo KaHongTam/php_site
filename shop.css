@@ -17,9 +17,6 @@ body {
     min-height: 50px;
     overflow: hidden;
     background-color: #5e717b;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     align-items: center;
     z-index:100;
 }
@@ -42,10 +39,11 @@ body {
 
 .nav_menu {
     height: 54px;
-    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav_menu:hover {
@@ -77,11 +75,9 @@ body {
 
 .leftbar {
     width: 18%;
-    /* background-color: #dfd3d3; */
 }
 
 .content {
-    /* padding-top: 50px; */
     color: black;
     width: 64%;
     display: flex;
@@ -89,6 +85,30 @@ body {
     flex-wrap: wrap;
     background-color: #ffffff;
 }
+
+.orderMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #5e717b;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #5e717b;
+  }
 
 .smallWrapper {
     display: flex;
