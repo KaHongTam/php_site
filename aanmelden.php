@@ -23,7 +23,6 @@
             <img src="Images/winkelwagen.jpg" width="50px">
         </div>
     </div>
-
         <div class="formulier">
             <form action="get_invoer.php" method="post" autocomplete="off">
             <h2>Meld je hier aan</h2>

@@ -75,11 +75,9 @@ body {
 
 .leftbar {
     width: 18%;
-    /* background-color: #dfd3d3; */
 }
 
 .content {
-    /* padding-top: 50px; */
     color: black;
     width: 64%;
     display: flex;
@@ -91,7 +89,6 @@ body {
 .rightbar {
     margin-right: 0;
     width: 18%;
-    /* background-color: #dfd3d3; */
 }
 
 .woonkamer {
