@@ -28,19 +28,20 @@
             <p>div leftbar</p>
         </div>
         <div class="content">
+        <form action="" method="get">
             <div class="orderMenu">
-            <form action="" method="get">
+                <div class="orderCategorie">
+                    Categorie:
+                    <input type="radio" name="categorie" value="Dieren" checked> Dieren
+                    <input type="radio" name="categorie" value="Natuur"> Natuur
+                    <input type="radio" name="categorie" value="Urban"> Urban
+                </div>
                 <div class="orderPrijs">
                     Prijs:
                     <input type="radio" name="prijs" value="1" checked> Oplopend
                     <input type="radio" name="prijs" value="0" /> Aflopend
                 </div>
-                <div class="orderCategorie">
-                    <input type="radio" name="categorie" value="Dieren" checked> Dieren
-                    <input type="radio" name="categorie" value="Natuur"> Natuur
-                    <input type="radio" name="categorie" value="Urban"> Urban
-                </div>
-                <div><button type="submit">Sorteer</button></div>
+                <div class="orderSubmit"><button type="submit">sorteer</button></div>
   </form>
             </div>
             <div class="smallWrapper">

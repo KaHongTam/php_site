@@ -86,12 +86,42 @@ body {
     background-color: #ffffff;
 }
 
-.orderMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+form {
     width: 100%;
-    justify-content: space-evenly;
+    height: 4%;
+}
+
+.orderMenu {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: 1fr 30% 20%;
+    grid-template-rows: 25px;
+}
+
+.orderCategorie {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 10%;
+}
+
+.orderPrijs {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.orderSubmit {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+button {
+    color: white;
+    background-color: #86969e;
+    height: 100%;
+    width: 80px;
+    font-size: 16px;
 }
 
 .arrow-up {

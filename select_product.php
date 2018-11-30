@@ -2,7 +2,6 @@
     include "db_connection.php";
 
     $product_oplopend = $_GET['prijs'];
-    // $product_oplopend = $_GET['prijs'];
 
     if ($product_oplopend == "1") {
         $product_categorie = $_GET['categorie'];
