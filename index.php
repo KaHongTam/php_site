@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PiKaso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
@@ -42,6 +42,6 @@
         </div>
 </div>
     <?php include "footer.php" ?>
-    <script src="index.js"></script>
+    <script src="Javascript/index.js"></script>
 </body>
 </html>

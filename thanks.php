@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PiKaso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="thanks.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/thanks.css" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +20,7 @@
         <div class="content">
             <h2>Bedankt voor het inschrijven!</h2>
             <script type="text/javascript">
-                var count = 10;
+                var count = 4;
                 var redirect = "index.php";
                 
                 function countDown(){
