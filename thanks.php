@@ -24,6 +24,6 @@
             <script src="thanks.js"></script>
         </div>
 </div>
-    <?php include "footer.php" ?>
+    <?php include "Javascript/footer.php" ?>
 </body>
 </html>
