@@ -31,7 +31,10 @@
                     <input type="radio" name="prijs" value="1" checked> Oplopend
                     <input type="radio" name="prijs" value="0" /> Aflopend
                 </div>
-                <div class="orderSubmit"><button type="submit">sorteer</button></div>
+                <div class="orderSubmit">
+                    <button type="submit">sorteer</button>
+                    <a href="shop.php?prijs=2">alles tonen</a>
+                </div>
   </form>
             </div>
             <div class="smallWrapper">

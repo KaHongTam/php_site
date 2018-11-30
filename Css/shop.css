@@ -94,7 +94,7 @@ form {
 .orderMenu {
     width: 100%;
     margin-top: 2%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     display: grid;
     grid-template-columns: 1fr 30% 20%;
     grid-template-rows: 25px;
@@ -122,6 +122,14 @@ button {
     height: 100%;
     width: 80px;
     font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 .arrow-up {
