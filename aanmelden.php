@@ -9,9 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <p>PiKaso.nl</p>
-    </div>
     <?php include "nav.php" ?>
         <div class="formulier">
             <form action="get_invoer.php" method="post" autocomplete="off">

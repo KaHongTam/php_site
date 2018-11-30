@@ -11,10 +11,11 @@
     $product_hout = $_POST["product_hout"];
     $product_staal = $_POST["product_staal"];
     $product_glas = $_POST["product_glas"];
+    $product_plaatje = $_POST["product_plaatje"];
 
     try {
-            $sql = "INSERT INTO product (productnaam, aantal, prijs, categorie, stijl, kleur, canvas, hout, staal, glas)
-            VALUES ('$product_productnaam', '$product_aantal', '$product_prijs', '$product_categorie', '$product_stijl', '$product_kleur', '$product_canvas', '$product_hout', '$product_staal', '$product_glas')";
+            $sql = "INSERT INTO product (productnaam, aantal, prijs, categorie, stijl, kleur, canvas, hout, staal, glas, plaatje)
+            VALUES ('$product_productnaam', '$product_aantal', '$product_prijs', '$product_categorie', '$product_stijl', '$product_kleur', '$product_canvas', '$product_hout', '$product_staal', '$product_glas', '$product_plaatje')";
             // use exec() because no results are returned
             $conn->exec($sql);
             echo "New record created successfully";
@@ -26,5 +27,5 @@
     
     $conn = null;
 
-    // header("Location: invoer.php");  
+    header("Location: invoer_product.php");  
 ?>

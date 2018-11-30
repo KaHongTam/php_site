@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PiKaso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="invoer.css" />
-    <script src="invoer.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/invoer_product.css" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Merriweather|Pacifico" rel="stylesheet">
 </head>
 <body>
+    <?php include "nav.php" ?>
     <form action="get_invoer_product.php" method="post">
-    <legend>Gebruikersinfo</legend>
     <label for="productnaam">Productnaam</label>
     <input type="text" id="productnaam" name="product_productnaam" autofocus>
     <br>
@@ -28,7 +28,7 @@
         </optgroup>
 </select>
         <br>
-    <label for="stijl">Stijl</label>
+    <label for="stijl">Stijl</label><br>
     <select id="stijl" name="product_stijl">
             <option value="foto">Foto</option>
             <option value="schilderij">Schilderij</option>               
@@ -55,9 +55,12 @@
         <input type="checkbox" id="materiaal" name="product_staal" value="1"><label class="light" for="materiaal">Staal</label><br>
         <input type="checkbox" id="materiaal" name="product_glas" value="1"><label class="light" for="materiaal">Glas</label><br>
         <br>
+        <label for="product_plaatje">Afbeelding</label>
+        <input type="text" id="plaatje" name="product_plaatje">
     <br>
     <button type="submit">Indienen</button>
     </form>
-    
+    <script src="JavaScript/product_invoer.js"></script>
+    <?php include "footer.php" ?>
 </body>
 </html>
