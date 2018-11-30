@@ -24,7 +24,7 @@
                 <img class="canvas" src="Images/dieren_2_foto_zwart.jpg">
                 <img class="canvas" src="Images/natuur_2_foto_blauw.jpg">
                 <img class="canvas" src="Images/urban_3_foto_zwart.jpg">
-                <img class="canvas" src="Images/natuur_4_schilderij_rood.jpg">
+                <img class="canvas" src="Images/natuur_5_schilderij_rood.jpg">
             </div>
             <div class="actie">
                 <div class="actie_sale">
