@@ -1,4 +1,4 @@
-var count = 10;
+var count = 4;
 var redirect = "index.php";
 
 function countDown(){
@@ -11,3 +11,5 @@ function countDown(){
         window.location.href = redirect;
     }
 }
+
+countDown();

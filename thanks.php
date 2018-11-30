@@ -19,26 +19,9 @@
         </div>
         <div class="content">
             <h2>Bedankt voor het inschrijven!</h2>
-            <script type="text/javascript">
-                var count = 4;
-                var redirect = "index.php";
-                
-                function countDown(){
-                    var timer = document.getElementById("timer");
-                    if(count > 0){
-                        count--;
-                        timer.innerHTML = "U wordt over "+count+" seconden terugverwezen.";
-                        setTimeout("countDown()", 1000);
-                    }else{
-                        window.location.href = redirect;
-                    }
-                }
-            </script>
-                
             <span id="timer">
-            <script type="text/javascript">countDown();</script>
             </span>
-        
+            <script src="thanks.js"></script>
         </div>
 </div>
     <?php include "footer.php" ?>
