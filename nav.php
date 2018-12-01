@@ -9,7 +9,7 @@
         <div class="nav_right">
             <a href="aanmelden.php" class="nav_menu">Aanmelden</a>
             <a href="invoer_product.php" class="nav_menu">Product toevoegen</a>
-                        <!-- <a href="inloggen.php" class="nav_menu">Inloggen</a> -->
+            <a href="inlogscherm.php" class="nav_menu">Inloggen</a>
             <!-- <img src="Images/winkelwagen.jpg" width="50px"> -->
         </div>
     </div>

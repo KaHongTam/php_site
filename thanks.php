@@ -18,7 +18,7 @@
             <h2>Bedankt voor het inschrijven!</h2>
             <span id="timer">
             </span>
-            <script src="thanks.js"></script>
+            <script src="JavaScript/thanks.js"></script>
         </div>
 </div>
     <?php include "Javascript/footer.php" ?>
