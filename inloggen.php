@@ -2,12 +2,12 @@
    session_start();
    include "db_connection.php";
 
-   $gebruiker_email = $_POST["email"];
-   $sql = "SELECT voornaam, achternaam, tussenvoegsel, email FROM gebruiker WHERE email = '$gebruiker_email'";
+   $invoer_email = $_POST["email"];
+   $invoer_wachtwoord = $_POST['wachtwoord'];
+   $sql = "SELECT voornaam, achternaam, tussenvoegsel, email, wachtwoord FROM gebruiker WHERE email = '$invoer_email'";
    $data = $conn->query($sql); 
    $aantal = $data->rowCount();
-   if($aantal == 0) 
-   {
+   if($aantal == 0) {
     echo "Email adres bestaat niet, probeer opnieuw";
     }
     else {
@@ -16,20 +16,28 @@
          $_SESSION["gebruiker_voornaam"] = $row['voornaam'];
          $_SESSION["gebruiker_achternaam"] = $row['achternaam'];
          $_SESSION["gebruiker_tussenvoegsel"] = $row['tussenvoegsel'];
-         $_SESSION["gebruik_email"] = $row['email'];
-         $adminTest = substr($_SESSION["gebruiker_voornaam"], 0, 2);
-     
-         if ($adminTest == "42") {
-             $gebruiker_naam = substr($_SESSION["gebruiker_voornaam"], 2);
-             $htmlOutput = "";
-             $htmlOutput = "Hallo " . $gebruiker_naam . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"] . "<br>";
-             echo $htmlOutput;
+         $_SESSION["gebruiker_email"] = $row['email'];
+         $_SESSION["gebruiker_wachtwoord"] = $row['wachtwoord'];
+
+        if ($invoer_wachtwoord == $_SESSION["gebruiker_wachtwoord"]) {
+            $adminTest = substr($_SESSION["gebruiker_voornaam"], 0, 2);
+        
+            if ($adminTest == "42") {
+                $gebruiker_naam = substr($_SESSION["gebruiker_voornaam"], 2);
+                $htmlOutput = "";
+                $htmlOutput = "Hallo " . $gebruiker_naam . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"] . "<br> Admin User";
+                echo $htmlOutput;
+            }
+            else {
+                $htmlOutput = "";
+                $htmlOutput = "Hallo " . $_SESSION["gebruiker_voornaam"] . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"] . "<br>";
+                echo $htmlOutput;
+            }
         }
         else {
-             $htmlOutput = "";
-             $htmlOutput = "you are not an admin";
-             echo $htmlOutput;
+            echo "gebruikersnaam en wachtwoord komen niet overeen. Probeer opnieuw";
         }
-     }
     }
+}
+$conn = null;  
 ?>
