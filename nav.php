@@ -8,7 +8,11 @@
         <!-- <a class="nav_menu">Stijl</a> -->
         <div class="nav_right">
             <a href="aanmelden.php" class="nav_menu">Aanmelden</a>
-            <a class="admin_link" href="admin_check.php" class="nav_menu">Product toevoegen</a>
+            <?php 
+            if ($_SESSION['admin'] == 42) {
+                echo "<a href='admin_check.php' class='nav_menu'>Product toevoegen</a>";
+                }
+            ?>
             <a href="inlogscherm.php" class="nav_menu">Inloggen</a>
             <!-- <img src="Images/winkelwagen.jpg" width="50px"> -->
         </div>

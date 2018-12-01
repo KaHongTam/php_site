@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php session_start() 
+<?php session_start();
+    if ($_SESSION['admin'] == NULL) {
+        $_SESSION['admin'] = 0;
+    }
 ?>
 <html>
 <head>
