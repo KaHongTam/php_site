@@ -106,7 +106,7 @@ body {
     width: 27%;
     left: 50%;
     transform: translate(-50%);
-    filter: grayscale(25%) contrast(90%) drop-shadow(8px 8px 10px #525050);
+    filter: grayscale(25%) contrast(90%) drop-shadow(-8px 8px 10px #525050);
    } 
 
 .actie {
