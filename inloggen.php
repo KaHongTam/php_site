@@ -25,13 +25,18 @@
             if ($adminTest == "42") {
                 $gebruiker_naam = substr($_SESSION["gebruiker_voornaam"], 2);
                 $htmlOutput = "";
-                $htmlOutput = "Hallo " . $gebruiker_naam . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"] . "<br> Admin User";
+                $htmlOutput = "Hallo " . $gebruiker_naam . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"]
+                 . "<br> Admin User. <a href='index.php'>Terug naar home als admin</a>";
                 echo $htmlOutput;
+                $_SESSION['admin'] = "42";
+                echo $_SESSION['admin'];
             }
             else {
                 $htmlOutput = "";
-                $htmlOutput = "Hallo " . $_SESSION["gebruiker_voornaam"] . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"] . "<br>";
+                $htmlOutput = "Hallo " . $_SESSION["gebruiker_voornaam"] . " " . $_SESSION["gebruiker_tussenvoegsel"] . " " . $_SESSION["gebruiker_achternaam"]
+                 . "<br> <a href='index.php'>Terug naar home als gebruiker</a>";
                 echo $htmlOutput;
+                $_SESSION['admin'] = "1";
             }
         }
         else {
