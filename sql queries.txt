@@ -11,8 +11,3 @@ SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = zwart"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "blauw"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "rood"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "geel"
-
-$eerstedeel = "SELECT productnaam, plaatje, aantal, prijs FROM product "
-$tweededeel1 = "ORDER BY prijs"
-$tweededeel2 = "WHERE"
-$derdedeel1 ="
