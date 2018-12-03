@@ -19,6 +19,7 @@ body {
     background-color: #5e717b;
     align-items: center;
     z-index:100;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .nav a{

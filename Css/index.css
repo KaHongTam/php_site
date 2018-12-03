@@ -2,6 +2,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Merriweather', serif;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Cabin', sans-serif; */
     color: white;
 }
 
@@ -19,6 +22,7 @@ body {
     background-color: #5e717b;
     align-items: center;
     z-index:100;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .nav a{
