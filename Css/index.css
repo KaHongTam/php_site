@@ -25,10 +25,19 @@ body {
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.nav a{
+.nav_gebruiker {
+    padding-top: 2px;
     float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
     text-decoration: none;
     color: white;
+    float: left;
 }
 
 .nav_right {

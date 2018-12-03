@@ -32,7 +32,7 @@
                 </div>
                 <div class="orderSubmit">
                     <button type="submit">sorteer</button>
-                    <a href="shop.php?prijs=2">alles tonen</a>
+                    <a href="shop.php?categorie=Dieren','Natuur','Urban&prijs=2">alles tonen</a>
                 </div>
   </form>
             </div>

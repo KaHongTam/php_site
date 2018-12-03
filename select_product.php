@@ -2,7 +2,7 @@
     include "db_connection.php";
 
         $product_categorie = $_GET['categorie'];
-        $sql = "SELECT productnaam, plaatje, aantal, prijs FROM product WHERE categorie = '$product_categorie' ORDER BY prijs ".($_GET['prijs']=="1"?"ASC":"DESC");
+        $sql = "SELECT productnaam, plaatje, aantal, prijs FROM product WHERE categorie IN ('$product_categorie') ORDER BY prijs ".($_GET['prijs']=="1"?"ASC":"DESC");
     $data = $conn->query($sql); 
     foreach ($data as $row)
     {   
