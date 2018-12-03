@@ -26,11 +26,11 @@
         <?php 
         if ($_SESSION['admin'] == 42) {
             echo "<a href='admin_check.php' class='nav_menu'>Product toevoegen</a>";
-            echo "<a href='index.php' class='nav_menu'>Uitloggen</a>";
+            echo "<a href='uitloggen.php' class='nav_menu'>Uitloggen</a>";
             echo "<img src='Images/winkelwagen.jpg' width='50px'>";
             }
         else if ($_SESSION ['admin'] == 1) {
-            echo "<a href='index.php' class='nav_menu'>Uitloggen</a>";
+            echo "<a href='uitloggen.php' class='nav_menu'>Uitloggen</a>";
             echo "<img src='Images/winkelwagen.jpg' width='50px'>";
         }
         else {

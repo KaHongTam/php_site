@@ -19,7 +19,7 @@
             <input type="email" name="email" autofocus value="kahongtam@hotmail.com">
             Wachtwoord:
             <input type="password" name="wachtwoord" value="1234">
-            <button type="submit">Aanmelden</button>
+            <button type="submit">Inloggen</button>
             <p>Wachtwoord vergeten? Klik dan <a href="wachtwoordvergeten.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
             <p>Nog geen account? Klik dan <a href="aanmelden.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
         </form>
