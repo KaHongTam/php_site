@@ -23,13 +23,20 @@
         </div>
     </div>
     <div class="nav_right">
-        <a href="aanmelden.php" class="nav_menu">Aanmelden</a>
         <?php 
         if ($_SESSION['admin'] == 42) {
             echo "<a href='admin_check.php' class='nav_menu'>Product toevoegen</a>";
+            echo "<a href='index.php' class='nav_menu'>Uitloggen</a>";
+            echo "<img src='Images/winkelwagen.jpg' width='50px'>";
             }
+        else if ($_SESSION ['admin'] == 1) {
+            echo "<a href='index.php' class='nav_menu'>Uitloggen</a>";
+            echo "<img src='Images/winkelwagen.jpg' width='50px'>";
+        }
+        else {
+            echo "<a href='aanmelden.php' class='nav_menu'>Aanmelden</a>";
+            echo "<a href='inlogscherm.php' class='nav_menu'>Inloggen</a>";
+        }
         ?>
-        <a href="inlogscherm.php" class="nav_menu">Inloggen</a>
-        <!-- <img src="Images/winkelwagen.jpg" width="50px"> -->
     </div>
 </div>
