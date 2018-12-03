@@ -14,13 +14,10 @@
 <?php include "nav.php" ?>
     <div class="container">
         <h1>Log hier in</h1>
-        <form action="inloggen.php" method="post" autocomplete="off">
+        <form action="wachtwoordweergeven.php" method="post" autocomplete="off">
             Emailadres:
-            <input type="email" name="email" autofocus value="kahongtam@hotmail.com">
-            Wachtwoord:
-            <input type="password" name="wachtwoord" value="1234">
-            <button type="submit">Aanmelden</button>
-            <p>Wachtwoord vergeten? Klik dan <a href="wachtwoordvergeten.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
+            <input type="email" name="email" autofocus required>
+            <button type="submit">Aanvragen</button>
             <p>Nog geen account? Klik dan <a href="aanmelden.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
         </form>
         </div>
