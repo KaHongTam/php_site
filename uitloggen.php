@@ -4,7 +4,6 @@
     $_SESSION['admin'] = 0;
     $_SESSION["gebruiker_voornaam"] = "";
     $_SESSION['counter'] = 0;
-    $_SESSION['']
     ?>
 <head>
     <meta charset="utf-8" />

@@ -30,6 +30,7 @@
                 echo $htmlOutput;
                 $_SESSION['admin'] = "42";
                 echo $_SESSION['admin'];
+                header("Location: index.php");
             }
             else {
                 $htmlOutput = "";
@@ -37,6 +38,7 @@
                  . "<br> <a href='index.php'>Terug naar home als gebruiker</a>";
                 echo $htmlOutput;
                 $_SESSION['admin'] = "1";
+                header("Location: index.php");
             }
         }
         else {
