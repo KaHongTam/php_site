@@ -24,7 +24,6 @@ if ($_SESSION['counter'] == 0) {
 <?php include "nav.php" ?>
     <div class="container">
         <div class="leftbar">
-            <p>div leftbar</p>
         </div>
         <div class="content">
             <div class="woonkamer">

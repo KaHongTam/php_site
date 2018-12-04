@@ -14,7 +14,6 @@
     <?php include "nav.php" ?>
     <div class="container">
         <div class="leftbar">
-            <p>div leftbar</p>
         </div>
         <div class="content">
         <form action="" method="get">
