@@ -45,11 +45,13 @@
             <label for="email">Email adres*</label>
             <input type="email" id="emailadres" name="gebruiker_email" required>
             <br>
-                <label for="wachtwoord">Wachtwoord* (minimaal 8 tekens)</label>
+            <label for="wachtwoord">Wachtwoord* (minimaal 8 tekens)</label>
             <input type="password" id="wachtwoord" name="gebruiker_wachtwoord" pattern=".{8,}" title="minimaal 8 tekens" required> <!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" -->
             <br>
+            <label id="labelwachtwoordherhaling" for="wachtwoordherhaling">Herhaal uw wachtwoord*</label>
+            <input type="password" id="wachtwoordherhaling" name ="gebruiker_wachtwoordherhaling" onkeyup="controle()" required>
             <p>* = verplicht</p>
-            <button type="submit" onclick="controle()">Aanmelden</button>
+            <button id="formbutton" type="submit">Aanmelden</button>
             </form>
             </div>
         </div>

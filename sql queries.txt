@@ -11,3 +11,14 @@ SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = zwart"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "blauw"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "rood"
 SELECT productnaam, plaatje, aantal, prijs FROM product WHERE kleur = "geel"
+
+SELECT * FROM Customers
+WHERE Country IN ('Germany', 'France', 'UK');
+
+<link href="https://fonts.googleapis.com/css?family=Cabin|Julius+Sans+One|Oswald|Roboto|Merriweather" rel="stylesheet">
+    font-family: 'Julius Sans One', sans-serif;
+
+
+
+
+if ( ) { }
