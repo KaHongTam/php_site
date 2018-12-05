@@ -10,5 +10,6 @@
         $htmlOutput .= '<a href="product.php?product_id=' . $row['product_id']. '"><div class="item"><h2>' . $row['productnaam'] . '</h2>' .  '<img src="Images/' . $row['plaatje']
          . '" alt ="' . $row['productnaam'] . '" width="320px height="240px">' . '<p>Aantal ' . $row['aantal'] . " € " . $row['prijs'] . '</p>' . '</div></a>';
         echo $htmlOutput;
+        $_SESSION['product_id'] = $row['product_id'];
     }
 ?>

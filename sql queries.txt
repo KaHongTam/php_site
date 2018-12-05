@@ -21,4 +21,14 @@ WHERE Country IN ('Germany', 'France', 'UK');
 
 
 
-if ( ) { }
+class weergevenMateriaal {
+    public $materiaal = "";
+
+    function weergeven($materiaal) {
+        if ($row['$materiaal'] == 0 {
+            $weergave = "disabled";
+        }
+        else {
+            $weergave = "";
+        }
+

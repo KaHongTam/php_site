@@ -15,7 +15,7 @@ if ($_SESSION['counter'] == 0) {
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PiKaso.nl</title>
+    <title>PiKasso.nl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Css/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin|Julius+Sans+One|Oswald|Roboto|Merriweather" rel="stylesheet">
@@ -43,7 +43,7 @@ if ($_SESSION['counter'] == 0) {
                 </div>
             </div>
             <div class="informatie">
-                <h3>Koop unieke werken in de uitvoering die bij jou past! De uitgebreide collectie van PiKaso wordt 
+                <h3>Koop unieke werken in de uitvoering die bij jou past! De uitgebreide collectie van PiKasso wordt 
                     aangeboden door meer dan duizend creatieve talenten. Ieder werk is verkrijgbaar in alle maten en materialen. </h3>
                 <h3> En wanneer je een werk hebt besteld, gaat een deel naar de beeldmaker van jouw werk. Steun creativiteit!</h3>
             </div>

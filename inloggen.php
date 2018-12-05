@@ -4,7 +4,7 @@
 
    $invoer_email = $_POST["email"];
    $invoer_wachtwoord = $_POST['wachtwoord'];
-   $sql = "SELECT voornaam, achternaam, tussenvoegsel, email, wachtwoord FROM gebruiker WHERE email = '$invoer_email'";
+   $sql = "SELECT gebruiker_id, voornaam, achternaam, tussenvoegsel, email, wachtwoord FROM gebruiker WHERE email = '$invoer_email'";
    $data = $conn->query($sql); 
    $aantal = $data->rowCount();
    if($aantal == 0) {
@@ -12,7 +12,8 @@
     }
     else {
         foreach ($data as $row)
-        { 
+        {
+         $_SESSION["gebruiker_id"] = $row['gebruiker_id'];
          $_SESSION["gebruiker_voornaam"] = $row['voornaam'];
          $_SESSION["gebruiker_achternaam"] = $row['achternaam'];
          $_SESSION["gebruiker_tussenvoegsel"] = $row['tussenvoegsel'];

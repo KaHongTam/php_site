@@ -1,5 +1,5 @@
 <div class="header">
-        <p>PiKaso.nl</p>
+        <p>PiKasso.nl</p>
     </div>
 <div class="nav" id="nav">
     <div class="nav_left">
@@ -27,11 +27,11 @@
         if ($_SESSION['admin'] == 42) {
             echo "<a href='admin_check.php' class='nav_menu'>Product toevoegen</a>";
             echo "<a href='uitloggen.php' class='nav_menu'>Uitloggen</a>";
-            echo "<img src='Images/winkelwagen.jpg' width='50px'>";
+            echo "<a href='overzicht.php'><img src='Images/winkelwagen.jpg' width='50px'></a>";
             }
         else if ($_SESSION ['admin'] == 1) {
             echo "<a href='uitloggen.php' class='nav_menu'>Uitloggen</a>";
-            echo "<img src='Images/winkelwagen.jpg' width='50px'>";
+            echo "<a href='overzicht.php'><img src='Images/winkelwagen.jpg' width='50px'></a>";
         }
         else {
             echo "<a href='aanmelden.php' class='nav_menu'>Aanmelden</a>";
