@@ -102,10 +102,16 @@ form {
 .links {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 70%;
     text-align: center;
     /* align-content: center; */
+}
+
+h2 {
+    font-size: 33px;
+    margin-left: 5%;
+    font-weight: bold;
 }
 
 .links img {
@@ -119,7 +125,16 @@ form {
     display: flex;
     flex-direction: column;
     width: 30%;
-    background-color: #5e717b2c;
+    /* background-color: #5e717b2c; */
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    border-color: #5e717b;
+    margin-left: -5px;
+    font-size: 20px;
+}
+
+.rechts select {
+    font-size: 20px;
 }
 
 .rechts p {
