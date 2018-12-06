@@ -27,8 +27,8 @@
                     $winkelwagen_prijs = $_SESSION['prijs'];
                     
                     try {
-                        $sql = "INSERT INTO bestelling (gebruiker_id, product_id, aantal, materiaal, prijs)
-                        VALUES ('$winkelwagen_gebruiker_id', '$winkelwagen_product_id', '$winkelwagen_aantal', '$winkelwagen_materiaal', '$winkelwagen_prijs')";
+                        $sql = "INSERT INTO bestelling (gebruiker_id, product_id, aantal, materiaal, prijs, bestelnummer)
+                        VALUES ('$winkelwagen_gebruiker_id', '$winkelwagen_product_id', '$winkelwagen_aantal', '$winkelwagen_materiaal', '$winkelwagen_prijs', 0)";
                         // use exec() because no results are returned
                         $conn->exec($sql);
                         $htmlOutput = "<br><br>In uw winkelwagen geplaatst, klik hier om verder te winkelen.";
@@ -38,7 +38,7 @@
                     {
                         echo $sql . "<br>" . $e->getMessage();
                     }
-                $conn = null;  
+                $conn = null;
                 ?>
         </div>
     </div>
