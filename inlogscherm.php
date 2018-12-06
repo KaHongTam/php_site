@@ -16,9 +16,9 @@
         <h1>Log hier in</h1>
         <form action="inloggen.php" method="post" autocomplete="off">
             Emailadres:
-            <input type="email" name="email" autofocus value="kahongtam@hotmail.com">
+            <input type="email" name="email" autofocus>
             Wachtwoord:
-            <input type="password" name="wachtwoord" value="1234">
+            <input type="password" name="wachtwoord"">
             <button type="submit">Inloggen</button>
             <p>Wachtwoord vergeten? Klik dan <a href="wachtwoordvergeten.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
             <p>Nog geen account? Klik dan <a href="aanmelden.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>

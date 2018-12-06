@@ -9,9 +9,9 @@
             $htmlOutput  = '';
             $htmlOutput .= '<h1>' . $row['productnaam'] . '</h1>';
             $htmlOutput .= '<img src="Images/' . $row['plaatje'] . '"width="60%"></div>';
-            $htmlOutput .= '<div class="rechts"><p>aantal resterend: ';
-            $htmlOutput .= $row['aantal'] . '<br>';
-            $htmlOutput .= 'materiaal:<br>';
+            $htmlOutput .= '<div class="rechts"><p>Aantal resterend: ';
+            $htmlOutput .= $row['aantal'] . '<br></p>';
+            $htmlOutput .= '<p>Materiaal:<br>';
             $htmlOutput .= '<select name="materiaal" id="materiaal">';
             if ($row['canvas'] == 0) {
                 $htmlOutput .= '<option id="canvas" value="canvas" disabled>Canvas</option>';
@@ -41,8 +41,13 @@
                 $htmlOutput .= '<option id="glas" value="glas">Glas</option>';
             }
 
-            $htmlOutput .= '</select><br><br><br><br><br>prijs: € ' . $row['prijs'] . '</p>';
-            $htmlOutput .= '<br><br><button type="submit">In winkelwagen plaatsen</button>';
+            $htmlOutput .= '</select></p><br><br><br><br><p>prijs: € ' . $row['prijs'] . '</p>';
+            if ($_SESSION['admin'] != 0) {
+                $htmlOutput .= '<br><br><button type="submit">Toevoegen</button>';
+            }
+            else {
+                $htmlOutput .= '<br><br><p>U bent nog niet ingelogd.<br>Klik <a href="inlogscherm.php">hier</a> om in te loggen.</p>';
+            }
             $htmlOutput .= '</div>';
             echo $htmlOutput;
             $_SESSION['product_id'] = $product_id;

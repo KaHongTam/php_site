@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* div {
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+} */
+
+.overzicht {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.productregel {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+}
+
+.previewplaatje {
+    height: 300px;
+}
+
+.stukje_tekst {
+    padding: 20px;
+}

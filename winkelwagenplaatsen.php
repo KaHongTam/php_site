@@ -31,8 +31,7 @@
                         VALUES ('$winkelwagen_gebruiker_id', '$winkelwagen_product_id', '$winkelwagen_aantal', '$winkelwagen_materiaal', '$winkelwagen_prijs', 0)";
                         // use exec() because no results are returned
                         $conn->exec($sql);
-                        $htmlOutput = "<br><br>In uw winkelwagen geplaatst, klik hier om verder te winkelen.";
-                        echo $htmlOutput;
+                        echo '<p>Dit item is nu toegevoegd in uw winkelwagen. Klik <a href="shop.php?categorie=Dieren%27,%27Natuur%27,%27Urban&prijs=2">hier</a> om verder te winkelen of op de winkelwagen om af te rekenen.</p>';
                     }
                 catch(PDOException $e)
                     {
