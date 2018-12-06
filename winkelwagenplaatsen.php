@@ -41,6 +41,7 @@
                 ?>
         </div>
     </div>
+</div>
     </form>
     <?php include "footer.php" ?>
     <script src="JavaScript/shop.js"></script>

@@ -23,6 +23,7 @@ body {
   align-items: center;
   z-index:100;
   font-family: 'Julius Sans One', sans-serif;
+  color: white;
 }
 
 .nav_gebruiker {

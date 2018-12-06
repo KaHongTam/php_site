@@ -18,7 +18,7 @@
             Emailadres:
             <input type="email" name="email" autofocus>
             Wachtwoord:
-            <input type="password" name="wachtwoord"">
+            <input type="password" name="wachtwoord">
             <button type="submit">Inloggen</button>
             <p>Wachtwoord vergeten? Klik dan <a href="wachtwoordvergeten.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
             <p>Nog geen account? Klik dan <a href="aanmelden.php" title="Klik hier om uw wachtwoord op te vragen">hier</a>.</p>
