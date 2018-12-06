@@ -14,7 +14,7 @@
             else {
                 $gebruiker_naam = $_SESSION["gebruiker_voornaam"];
             }
-            echo "<div class='nav_gebruiker'><p>Welkom " . $gebruiker_naam . "</p></div>"; 
+            echo "<div class='nav_gebruiker'><p>Welkom " . $gebruiker_naam . "&#9660</p></div>"; 
         ?>
         <div class="nav_left_menu"><a href="index.php" class="nav_menu">Home</a>
         <!-- <a href="aanmelden.php" class="nav_menu">Hoe werkt het?</a> -->
