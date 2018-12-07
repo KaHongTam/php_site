@@ -9,12 +9,12 @@
             }
             $adminTest = substr($_SESSION["gebruiker_voornaam"], 0, 2);
             if ($adminTest == 42) {
-                $gebruiker_naam = substr($_SESSION["gebruiker_voornaam"], 2);
+                $gebruiker_naam = substr($_SESSION["gebruiker_voornaam"], 2) . '&#9660';
             }
             else {
-                $gebruiker_naam = $_SESSION["gebruiker_voornaam"];
+                $gebruiker_naam = $_SESSION["gebruiker_voornaam"] . '&#9660';
             }
-            echo "<div class='nav_gebruiker'><p>Welkom " . $gebruiker_naam . "&#9660</p></div>"; 
+            echo "<a href='persoonlijke_pagina.php'><div class='nav_gebruiker'><p>Welkom " . $gebruiker_naam . "</p></div></a>"; 
         ?>
         <div class="nav_left_menu"><a href="index.php" class="nav_menu">Home</a>
         <!-- <a href="aanmelden.php" class="nav_menu">Hoe werkt het?</a> -->
