@@ -112,16 +112,16 @@ body {
   }
   
   form {
-      max-width: 400px;
-      margin: 60px auto;
+      /* max-width: 400px; */
+      /* margin: 60px auto; */
       padding: 10px 20px;
-      background: #f8f8f4;
+      /* background: #f8f8f4;
       border-radius: 8px;
       border-style: solid;
       border-width: 1px;
-      border-color: #5e717b;
+      border-color: #5e717b; */
       color: black;
-      box-shadow: 5px 5px  #5e717b;
+      /* box-shadow: 5px 5px  #5e717b; */
     }
   
     input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
@@ -143,6 +143,10 @@ body {
       border-radius: 3px;
     }
   
+    #huisnummer, #huisnummer_toevoeging {
+        width: 5%;
+    }
+
     input:focus {
         box-shadow: 1px 1px #2666a1;
         transform: translate(3px, 3px);
@@ -156,7 +160,7 @@ body {
       font-style: normal;
       border-radius: 5px;
       height: 40px;
-      width: 50%;
+      width: 25%;
       border: 1px solid #97897d;
       border-width: 1px 1px 3px;
       box-shadow: 0 -1px 0 #ffffff1a inset;

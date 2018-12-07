@@ -30,20 +30,23 @@
                     $gebruiker_naam = $_SESSION["gebruiker_voornaam"];
                 }
                 echo '<h1>Persoonlijke pagina: </h1>';
+                echo '<form action="wijzigen_persoonlijke_pagina.php" method="post" autocomplete=off>';
                 $htmlOutput  = '';
-                $htmlOutput .= '<p>Voornaam:<br><input type="text" value="' .  $gebruiker_naam . '"></p>';
-                $htmlOutput .= '<p>Tussenvoegsel:<br><input type="text" value="' .  $_SESSION["gebruiker_tussenvoegsel"] . '"></p>';
-                $htmlOutput .= '<p>Achternaam:<br><input type="text" value="' .  $_SESSION["gebruiker_achternaam"] . '"></p>';
-                $htmlOutput .= '<p>Straatnaam:<br><input type="text" value="' .  $_SESSION["gebruiker_straatnaam"] . '"></p>';
-                $htmlOutput .= '<p>Huisnummer:<br><input type="text" value="' .  $_SESSION["gebruiker_huisnummer"] . '"></p>';
-                $htmlOutput .= '<p>Huisnummer toevoeging:<br><input type="text" value="' .  $_SESSION["gebruiker_huisnummertoevoeging"] . '"></p>';
-                $htmlOutput .= '<p>Plaatsnaam:<br><input type="text" value="' .  $_SESSION["gebruiker_plaatsnaam"] . '"></p>';
-                $htmlOutput .= '<p>Postcode:<br><input type="text" value="' .  $_SESSION["gebruiker_postcode"] . '"></p>';
-                $htmlOutput .= '<p>Telefoonnummer:<br><input type="text" value="' .  $_SESSION["gebruiker_telefoonnummer"] . '"></p>';
-                $htmlOutput .= '<p>Emailadres:<br><input type="email" value="' .  $_SESSION["gebruiker_email"] . '"></p>';
-                $htmlOutput .= '<p>Wachtwoord:<br><input type="password" value="' .  $_SESSION["gebruiker_wachtwoord"] . '"></p>';
-                $htmlOutput .= '<p>Herhaling wachtwoord:<br><input type="password"></p>';
+                $htmlOutput .= '<p>Voornaam:*<br><input type="text" value="' .  $gebruiker_naam . '" name="wijzigen_voornaam" required autofocus></p>';
+                $htmlOutput .= '<p>Tussenvoegsel:<br><input type="text" value="' .  $_SESSION["gebruiker_tussenvoegsel"] . '" name="wijzigen_tussenvoegsel"></p>';
+                $htmlOutput .= '<p>Achternaam:*<br><input type="text" value="' .  $_SESSION["gebruiker_achternaam"] . '" name="wijzigen_achternaam" required></p>';
+                $htmlOutput .= '<p>Straatnaam:*<br><input type="text" value="' .  $_SESSION["gebruiker_straatnaam"] . '" name="wijzigen_straatnaam" required></p>';
+                $htmlOutput .= '<p>Huisnummer:*<br><input type="text" id="huisnummer" value="' .  $_SESSION["gebruiker_huisnummer"] . '" name="wijzigen_huisnummer" required></p>';
+                $htmlOutput .= '<p>Huisnummer toevoeging:<br><input type="text" id="huisnummer_toevoeging" value="' .  $_SESSION["gebruiker_huisnummertoevoeging"] . '" name="wijzigen_huisnummer_toevoeging"></p>';
+                $htmlOutput .= '<p>Plaatsnaam:*<br><input type="text" value="' .  $_SESSION["gebruiker_plaatsnaam"] . '" name="wijzigen_plaatsnaam" required></p>';
+                $htmlOutput .= '<p>Postcode:*<br><input type="text" value="' .  $_SESSION["gebruiker_postcode"] . '" name="wijzigen_postcode" required></p>';
+                $htmlOutput .= '<p>Telefoonnummer:*<br><input type="text" value="' .  $_SESSION["gebruiker_telefoonnummer"] . '" name="wijzigen_telefoonnummer" required></p>';
+                $htmlOutput .= '<p>Emailadres:*<br><input type="email" value="' .  $_SESSION["gebruiker_email"] . '" name="wijzigen_email" required></p>';
+                $htmlOutput .= '<p><label for="wachtwoord">Wachtwoord:* (minimaal 8 tekens)</label><br><input type="password" id="wachtwoord" pattern=".{8,}" title="minimaal 8 tekens" required value="' .  $_SESSION["gebruiker_wachtwoord"] . '" name="wijzigen_wachtwoord" required></p>';
+                $htmlOutput .= '<p><label id="labelwachtwoordherhaling" for="wachtwoordherhaling">Herhaal uw wachtwoord:*</label><br><input type="password" id="wachtwoordherhaling" onkeyup="controle()" required></p>';
+                $htmlOutput .= '<button id="formbutton" type="submit">Wijzigen</button>';
                 echo $htmlOutput;
+                echo '</form>';
 
             ?>
         </div>
@@ -53,5 +56,6 @@
     <?php include 'footer.php' ?>
     </div>
 </body>
+<script src="Javascript/aanmelden.js"></script>
 </html>
 
