@@ -30,14 +30,6 @@
                         $conn->exec($sql);
                 $conn = null;  
                 echo "<h1>bedankt voor uw bestelling!</h1>";
-
-                // THIS NEEDS FIXING!!!!!!!!!!!!!
-                // UPDATE product SET aantal = aantal - 1 WHERE (SELECT bestelling.gebruiker_id, bestelling.product_id, product.aantal FROM bestelling INNER JOIN product ON bestelling.product_id=product.product_id)
-                // bestelling.gebruiker_id = "1" AND bestelling.bestelnummer = "0"
-
-
-                // $sql = "UPDATE product SET aantal = aantal - 1 WHERE bestelling.bestelnummer = 0";
-                // $data = $conn->query($sql);
             ?>
         </div>
     <?php include 'footer.php' ?>

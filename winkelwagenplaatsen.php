@@ -32,6 +32,8 @@
                         // use exec() because no results are returned
                         $conn->exec($sql);
                         echo '<p>Dit item is nu toegevoegd in uw winkelwagen. Klik <a href="shop.php?categorie=Dieren%27,%27Natuur%27,%27Urban&prijs=2">hier</a> om verder te winkelen of op de winkelwagen om af te rekenen.</p>';
+                        $sql = "UPDATE product SET aantal = aantal - 1 WHERE product_id = $winkelwagen_product_id";
+                        $conn->exec($sql);
                     }
                 catch(PDOException $e)
                     {
